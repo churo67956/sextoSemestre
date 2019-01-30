@@ -1,0 +1,893 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+Registro de instalaciones eléctricas de baja tensión - navarra.es
+</title>    
+    <meta name="Content-Language" content="Spanish" />
+    <meta name="robots" content="index,follow" />
+    
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="FECHA" content="2009-10-05" />
+<meta name="FECHA_HORA" content="2009-10-05T08:43:16" />
+<meta name="StrURL" content="/home_es/Servicios/default.htm" />
+<meta name="PLANTILLA" content="PT_Home_ServiciosAE" />
+ 
+    <meta name="Owner" content="Gobierno de Navarra" />
+    <meta name="Language" content="Spanish" />
+    <link rel="start" href="/" title="Página inicial" />
+    <link rel="author" title="Contacte con nosotros"
+        href="/home_es/Indices/Sugerencias/default.htm" />
+    <link rel="help" title="Accesibilidad de estas páginas"
+        href="/home_es/Aviso/accesibilidad.htm" />
+    <link rel="contents" href="/home_es/Indices/Mapa+web/"
+        title="Mapa web. Índice de contenidos" />
+    <link rel="search" href="/home_es/Indices/Buscador/"
+        title="Buscador" />
+    <link rel="up" href="#contenido" title="Saltar navegación e ir al contenido" />
+    <link rel="stylesheet" type="text/css" href="/es/css/estilos.css" />
+    
+    <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+    
+    
+     <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css' />
+    <link href="/css/responsiveestilos.css" rel="stylesheet" />
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+    
+    
+	<link rel="stylesheet" type="text/css" href="/AppsExt/Servicios/css/servicios.css" media="screen" />
+    <!--[if IE]><link href="/AppsExt/Servicios/css/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+    <link rel="stylesheet" type="text/css" href="/AppsExt/Servicios/css/chrome.css" />
+    <link href="/AppsExt/Servicios/css/imprimir.css" rel="stylesheet" type="text/css" media="print" />
+
+    <script type="text/javascript">
+
+	function ocultar_todas_opciones(){
+		var name_class_bloque='#contenido_caja';
+		var num_menu_tabs=$(".menu_tabs li").size();
+		for(var i=1;i<=$(".menu_tabs li").size();i++){
+			$(name_class_bloque+i).addClass("oculto");
+			$(name_class_bloque+i).removeClass("mostrar");
+			var temp_obj=$(".menu_tabs li a");
+			  temp_obj=temp_obj.eq(i-1);
+			  temp_obj.removeClass("seleccionado");
+
+		}
+	}
+	
+	function mostrar_opcion(num){
+		var name_class_bloque='#contenido_caja';
+		$(name_class_bloque+num).addClass("mostrar");
+		$(name_class_bloque+num).addClass("seleccionado");
+		$(name_class_bloque+num).removeClass("oculto");
+		var temp_obj=$(".menu_tabs li a");
+			  temp_obj=temp_obj.eq(num-1);
+			  temp_obj.addClass("seleccionado");
+		
+	}
+	
+    $(document).ready(function(){
+		    ocultar_todas_opciones();
+		   //mostrar_opcion(1); //Mostrar la primera opcion
+			mostrar_opcion($(".menu_tabs li").size()); //Mostrar la ultima opcion	
+			$(".menu_tabs li a").click(
+  				function () {	
+					ocultar_todas_opciones();				
+					var url= $(this).attr("href");
+                    var id_caja = url.split("#"); 					
+					$(url).removeClass("oculto");
+					$(url).addClass("mostrar");
+					curvyCorners.redraw();
+					$(this).addClass("seleccionado");
+					return false;
+  				}
+			);
+			
+			$("p.imprimir").click(
+				function (){
+					window.print();
+					return false;
+				}
+			);
+
+            $('.accordion div').hide();
+            $('.accordion h3').click(function(){
+                $(this).next('div').slideToggle('slow');
+                $(this).toggleClass('active');
+                $(this).siblings('h3').removeClass('active');
+             });
+             
+            $('.div_tabs_resultados > div').hide();
+            $('.tabs > div > p').hide();
+            
+           /* var len = $('.tabs > div > a[title="Resultados"]').nextAll('p').length;
+            if (len !=0)
+            {
+                showTab ("Resultados");
+            }*/
+            var mostrar='';
+            if(mostrar && mostrar!==''){            
+                showTab(mostrar);
+            }
+        });
+
+
+
+        function showTab (tab){       
+            var $this = $('.info > div#'+tab+'');
+            $('.info > div').not($this).hide();
+            $($this).show();
+            
+            $('.tabs > .activa').removeClass("activa").addClass("noactiva");
+            $('.tabs > div > a[title="'+tab+'"]').parent().removeClass("noactiva").addClass("activa");
+            
+            
+            if(tab=='Resultados'){
+                $('.div_tabs_resultados > div').show();
+                $('.tabs > div > a[title="'+tab+'"]').nextAll("p").filter(function(){
+                    if ($(this).find('a').html() == 'Resultados') {
+                        return false;
+                    }
+                    return true;
+                }).show();
+                /*FALTA si el p > a value = Resultado ocultarlo*/
+                var len = $('.tabs > div > a[title="'+tab+'"]').nextAll('p').length;
+                 
+                var $this = $('.bloque_menu_contenido .bloque_contenido').children('div').get(len-1);
+                if ($this !=undefined)
+                {
+                    $('.bloque_menu_contenido .bloque_contenido > div').not($this).hide();
+                    $($this).show();
+                }
+                
+                $('.tabs > .activa > p > a').removeClass("activa").addClass("noactiva");
+                $('.tabs > .activa > p').removeClass("activa").addClass("noactiva");
+                                
+                $($('.tabs > div > a[title="'+tab+'"]').nextAll('p').get(len-1)).children().addClass('activa');
+                $($('.tabs > div > a[title="'+tab+'"]').nextAll('p').get(len-1)).addClass('activa');
+                $('.div_tabs_resultados').removeClass('oculto');
+               
+            }
+            else {
+                $('.tabs > .noactiva > p').hide();
+            }
+        }
+        function showSubTab(tab){
+   
+            var $this = $('.bloque_menu_contenido .bloque_contenido > div#'+tab);
+            $('.bloque_menu_contenido .bloque_contenido > div').not($this).hide();
+            $($this).show();
+            
+            $('.tabs > .activa > p > a').removeClass("activa").addClass("noactiva");
+            $('.tabs > .activa > p').removeClass("activa").addClass("noactiva");
+            $('.tabs > .activa > p > a#'+tab).removeClass("noactiva").addClass("activa");
+            $('.tabs > .activa > p > a#'+tab).parent().removeClass("noactiva").addClass("activa");
+            
+        }
+        </script>
+                
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+
+
+    <script type="text/JavaScript" src="/js/funcionalidades.js"></script>
+    <script type="text/javascript">
+    <!--
+        function inicializar(){
+            abrirPopup("Se abre en nueva ventana");
+        }
+        window.onload = inicializar;
+    // -->
+    </script>
+<link rel="canonical" href="http://www.navarra.es/home_es/Servicios/ficha/2932/Registro-de-instalaciones-electricas-de-baja-tension" /></head>
+<body>
+    <div id="estructura">
+        <div class="row-content fondoblanco" style="padding-bottom:0px">
+            <div class="container">
+                <div class="col-xs-12">
+                    <a href="#contenido" class="navegacion" accesskey="1">(ir al contenido)</a>
+                    
+                    <div id="cabecera">
+                        <h1 class="logo">
+                            <a href="/home_es/" accesskey="0"><img src="/imgs/logo.navarra.es.gif" alt="Logotipo navarra.es" /></a>
+                        </h1>
+                        
+     <p class="idiomas">
+     <strong>Castellano</strong>
+
+	<span>|</span>	
+
+	<a href="/home_eu/Servicios/ficha/5682/Behe-tentsioko-instalazio-elektrikoen-erregistroa">Euskera</a>
+	
+	<span>|</span>	
+	
+	Français
+	
+	<span>|</span>	
+	
+	English
+	</p>
+    
+<!--googleoff: all-->
+<form class="buscador" id="frmSearch" action="/home_es/Indices/Buscador/default.htm" method="get">
+<fieldset>
+ 
+<span class="nuevo">
+¡Utilice el buscador!
+</span>
+
+<label for="q">
+buscador
+</label>
+<input name="q" value="introduzca palabra/s" 
+onblur="if(this.value==''){this.value='introduzca palabra/s'}" 
+onfocus="this.value=''" type="text" id="q" 
+maxlength="50"/> 
+<!--<input name="filetype" value="htm" type="hidden" />-->
+<input class="boton" type="submit" value="buscar" />
+</fieldset>
+</form>
+<!--googleon: all-->
+
+    
+<!--googleoff: all-->
+<map title="navegación primer nivel" id="primerNivel">
+<ul>
+
+	<li class="primero"><a href="/home_es/Navarra/" accesskey="n">Navarra</a></li>
+	
+	<li class="on"><a href="/home_es/Servicios/" accesskey="t">Trámites</a></li>
+	
+	<li><a href="/home_es/Temas/" accesskey="e">Temas</a></li>
+	
+	<li><a href="/home_es/Gobierno+de+Navarra/" accesskey="g">Gobierno</a></li>
+	
+	<li><a href="/home_es/Actualidad/" accesskey="a">Actualidad</a></li>
+	
+</ul></map>
+<!--googleon: all-->
+
+
+
+                    </div>
+                    <hr class="navegacion" />
+                    <div class="migasUsuarioConectado">
+                        
+
+
+                        
+
+
+                    </div>
+                    
+                               
+                </div>
+            </div>
+        </div>
+        <div class="row-content">
+            
+<div class="row-tools">
+    <div class="container">            
+        <div class="col-xs-12">
+            <div class="migas">
+                <a href="/home_es/servicios">Trámites</a>
+                <img src="/imgs/flechaMigas.png" alt="" />
+                <a href="/home_es/servicios/ficha/2932/Registro-de-instalaciones-electricas-de-baja-tension">Registro de instalaciones eléctricas de baja tensión</a>
+            </div>    
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="row-content cuerponuevo">
+            
+
+            
+            
+                
+<a id="comienzoContenido"></a>
+            
+            
+
+<!-- Ventana -->
+<script type="text/JavaScript" src="/AppsExt/Servicios/js/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/AppsExt/Servicios/js/ventana/css/prettyPhoto.css"/>
+<script type="text/JavaScript" src="/AppsExt/Servicios/js/ventana/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+	    $("a.prettyPhoto").prettyPhoto({			
+		    theme: 'light_rounded',
+		    default_width: 690,
+		    default_height: 500,
+		    inline_markup: '<div class="pp_inline clearfix">{content}</div>'
+	
+	    });
+    });
+    
+</script>
+
+<div class="container">            
+    <div class="col-xs-12">
+        <div style="display:none">
+            
+
+<div class="contenido_2_columnas">
+   <!-- buscador_simple -->
+   
+   <div class="buscador_simple">
+   <form id="noform" name="noform" method="post" action=""></form>
+        <div class="columna_1">
+		<form id="formBusquedaSimple" name="formBusquedaSimple" method="post" action="/home_es/Servicios/buscador/">
+                <fieldset>
+                	<h2 class="titulo_buscador">Buscador de servicios</h2>
+                    <legend>Buscador de servicios</legend>
+                    <label for="buscador" class="oculto">Buscador de servicios</label>
+                    <input type="text" name="buscador" id="buscador" value="" title="Introduzca t&eacute;rminos de b&uacute;squeda" />
+                    <input type="submit" class="btn" value="Encuentra tu servicio" />
+                    <br class="clear" />
+                </fieldset>
+        </form>
+                
+
+
+<div class="bloques">
+    <span class="bloque">
+        <a  href="/home_es/Servicios/destacados/">Destacamos</a>
+    </span>
+    <span class="bloque">
+        <a  href="/home_es/Servicios/mas-consultados/">M&aacute;s consultados</a>
+    </span>
+    <span class="bloque">
+        <a  href="/home_es/Servicios/que-hacer-cuando/">Qu&eacute; hacer cuando...</a>
+    </span>
+    <span class="bloque">
+        <a  href="/home_es/Servicios/temas/">Temas</a>
+    </span>
+    <span class="bloque">
+        <a  href="/home_es/Servicios/lo-mas-nuevo/">Lo m&aacute;s nuevo</a>
+    </span>
+    <span class="bloque">
+        <a  href="/home_es/Servicios/ultimos-dias/">&Uacute;ltimos d&iacute;as</a>
+    </span> 
+</div>
+
+
+        </div>
+     
+        <div class="columna_2">
+
+            <div class="no_js"><!-- No js -->
+            <p class="txt_buscador"><a href="/home_es/Servicios/buscador-avanzado/" title="B&uacute;squeda avanzada">B&uacute;squeda avanzada</a></p>
+      </div><!-- /No js -->
+            <p class="txt_dcha txt_consejos"><a href="/home_es/Servicios/Recursos/Consejos+de+busqueda.htm" title="Consejos de b&uacute;squeda">Consejos de b&uacute;squeda</a></p>
+			<p class="txt_dcha txt_consejos"><a href="/home_es/Temas/Administracion+electronica/Como+tramitar+los+servicios/Resuelve+tus+dudas/Guias+y+documentacion/Videos+de+ayuda/" title="Ayuda tramitaci&oacute;n telem&aacute;tica">Ayuda tramitaci&oacute;n telem&aacute;tica</a></p>
+         </div>
+        <br class="clear" />
+     </div><!-- /buscador_simple -->
+</div>
+            <div class="separador"> </div>
+        </div> 
+        
+        
+                
+        <!--<div class="antetitulo">Industria y Energía </div>-->
+        
+        
+                <!-- TITULO -->
+                <h1 class="titular">Registro de instalaciones eléctricas de baja tensión</h1>
+                <!-- DESCRIPCION -->
+                <div class="introduccion">
+                    <p>Se pueden consultar las&nbsp;empresas registradas&nbsp;en el apartado: "M&aacute;s informaci&oacute;n"</p>
+                </div>
+                <!-- AVISO -->
+                 
+                <!-- BOTONES -->
+                <!-- -->
+                  
+                        <div class="boton-solicitud">
+                            <span><a href="#bloque_ventana" id="ctl00_Contenido_RptFicha_ctl00_tramitar1" class="prettyPhoto">Tramitar</a></span>                       
+                        </div>
+                     
+                <!-- -->
+             
+                <div style="display:none">
+            	    <div class="columna_2">
+                        <img src='/AppsExt/Servicios/imgs/estado_abierto.gif' title="Plazo de presentaci&oacute;n abierto" alt="Plazo de presentaci&oacute;n abierto" class="ficha_icono" />
+                        
+                        
+                        
+                            <img src="/AppsExt/Servicios/imgs/nivel_tramitacion.gif" title="Tramitaci&oacute;n online" alt="Tramitaci&oacute;n online" class="ficha_icono" />
+                        
+                    </div>   
+                                 
+                	<br class="clear" />
+                    <div class="no_js"><!-- No js -->
+                        <ul class="tabs">
+                            <li class="seleccionado"><a href="#presentacion" class="grupo02">Presentaci&oacute;n</a></li>
+                                
+                                    <li><a href="#documentacion" class="grupo02">Documentaci&oacute;n y tramitaci&oacute;n</a></li>
+                                
+                                
+                                
+                                    <li><a href="#normativa" class="grupo02">Normativa</a></li>
+                                
+                            <li><a href="#contacto" class="grupo02">Contacto</a></li>
+                        </ul>
+                    </div><!--/ No js -->
+                    
+                    <br class="clear" />
+                </div>
+                
+                <div class="col-xs-12 info-resultado">
+                    <!--PESTAÑAS-->
+				        
+                            <div class="col-xs-12 info">
+                        
+				        
+				    <!--FICHA-->
+				    
+				        <div id="Informacion">
+				            <div class="div_tabs_presentacion grupo02 activo">
+				                <!--PLAZO DE PRESENTACIÓN-->  
+                                <h3 class="titulo">Plazo </h3>
+                                <p class="parrafo">
+                                    
+                                    Abierto todo el a&ntilde;o.
+                                </p>
+                                <p class="textocontenido">
+                                
+                                <!--
+                                    <p class="textocontenido">Palabras clave:luz, electricidad, seguridad industrial, BT, baja tensión, boletines, certificado luz, boletín luz, energía eléctrica</p>
+                                -->
+                                
+				                <!--MOSTRAR AVISO-->   
+				                <noscript>
+                                    <h3>Presentaci&oacute;n</h3>
+                                </noscript>
+                                <h3 class="oculto">Presentaci&oacute;n</h3>
+                                                   
+                                
+                                <!--OBJETO
+                                Visible='False'
+			                    -->    
+			                      
+                               
+                                <!--DESTINATARIOS / DIRIGIDO A-->
+                                
+                                    <h3 class="titulo">Dirigido a </h3>
+                                    <div class="tiny"><ul>
+<li>Titulares de instalaciones el&eacute;ctricas de cualquier tipo y uso. </li>
+<li>Empresas suministradoras. </li>
+<li>Empresas instaladoras. </li>
+<li>Instaladores</li>
+</ul>
+<p>Permite registrar&nbsp;las instalaciones el&eacute;ctricas de baja tensi&oacute;n (conjunto de aparatos y circuitos para producir, convertir, transformar, transmitir, distribuir o utilizar energ&iacute;a el&eacute;ctrica, cuyas tensiones nominales sean iguales o inferiores a 1.000 V para corriente alterna&nbsp;o 1.500 V para corriente continua).</p></div>
+                                  
+                                
+                                <!--CARACTERISTICAS-->
+                                
+                                    <div class="accordion">
+                                        <h3>Más información </h3>
+                                        <div class="tiny"><p><strong>CONSULTA DE EMPRESAS REGISTRADAS:</strong></p>
+<p><a href="https://extra.navarra.es/PortalRegistroEmpresasDIEE/BuscadorRegistroEmpresasDivB.aspx" target="_blank">Empresas habilitadas en Navarra</a> <br /><a href="https://sedeaplicaciones.minetur.gob.es/RII/consultaspublicas/consultadatos.aspx" target="_blank">Empresas de toda Espa&ntilde;a</a></p>
+<p>Aplicaci&oacute;n m&oacute;vil <a title="http://www.navarra.es/home_es/Actualidad/Sala+de+prensa/Noticias/2015/06/18/App+Tu+Seguridad.htm" href="http://www.navarra.es/home_es/Actualidad/Sala+de+prensa/Noticias/2015/06/18/App+Tu+Seguridad.htm">"Tu seguridad"</a> ( <a title="https://play.google.com/store/apps/details?id=com.geoactio.seguridadvivienda" href="https://play.google.com/store/apps/details?id=com.geoactio.seguridadvivienda">Google Play</a> - <a title="https://itunes.apple.com/us/app/tu-seguridad/id990274867?l=es&amp;mt=8" href="https://itunes.apple.com/us/app/tu-seguridad/id990274867?l=es&amp;mt=8">Apple Store</a>)</p></div>
+                                    </div>
+                                 
+                                </p>
+                            </div>
+                            
+                            <!--TRAMITACIÓN PRESENCIAL, ONLINE, PASOS SIGUIENTES-->
+                            
+                                <!--<h3 class="titulo">Documentaci&oacute;n y tramitaci&oacute;n</h3>-->
+                                    
+                                        <h3 class="oculto">Documentaci&oacute;n y tramitaci&oacute;n</h3>
+                                        <!--DOCUMENTACION-->
+                                        <h3 class="titulo">Documentación</h3>
+                                        <span id="ctl00_Contenido_RptFicha_ctl00_lblDocObligatoria"></span>
+                                            <div class="textocontenido"><p><a href="/home_es/servicios/descargar-fichero/mPm4S2Sd7Y26p12X2XySdbLhpNj8xs/ID_establecimientos.pdf">Solicitud de acceso a los datos b&aacute;sicos (Id) de los establecimientos</a>&nbsp;</p>
+<p><strong>1.- Registro de nueva instalaci&oacute;n o modificaci&oacute;n</strong></p>
+<ul>
+<li><a href="/home_es/servicios/descargar-fichero/JMZrX1HHXB9q5TJSgjH3x8MRP8gRZN/Fc709014rev12.doc">Carpeta baja tensi&oacute;n</a><a href="/home_es/servicios/descargar-fichero/zp7V4GTjXbrrT4FDf1yJPH9P4SrpMV/CarpetaBT.doc"></a></li>
+<li><a href="/home_es/servicios/descargar-fichero/rwR8YqdZVRV2jKs5mrt51hLkMBHy9W/RegistroBT.doc">Registro de instalaci&oacute;n</a><a href="/home_es/servicios/descargar-fichero/QH8kpdgJnLPHD8j476ZSHstSy4kcst/Registro BT para gestor 01-09.doc"></a></li>
+<li><a href="/home_es/servicios/descargar-fichero/g49B49zRL2GHG2xVxY3wP85F7xzwq9/Fc709009BTrev16.pdf">Certificado de instalaci&oacute;n</a></li>
+<li>Proyecto o <a href="/home_es/servicios/descargar-fichero/B28FMSspZPzZtWvVsj5zBBPBj3rTFf/Fc709008BTrev7.pdf">memoria t&eacute;cnica</a>
+<ul>
+<li><a href="/home_es/servicios/descargar-fichero/QqG9dLJB9ddfwPKLY7tL5T24GGSQ45/CROQUIS.pdf">Croquis</a> memoria t&eacute;cnica</li>
+<li><a href="/home_es/servicios/descargar-fichero/31kzX5LTsYcwYgHdsBn1Pj6Wg571dH/Unif.pdf">Unifilar</a> memoria t&eacute;cnica</li>
+</ul>
+</li>
+</ul>
+<p><strong>NOTA:</strong> El proyecto y direcci&oacute;n de obra se presentar&aacute;n a trav&eacute;s de<strong> </strong><a href="http://www.navarra.es/home_es/Servicios/ficha/3588/Repositorio-de-proyectos-y-visados#documentacion" target="_blank"><strong>CONSIGNA</strong></a></p>
+<p><strong>2.- Instalaciones de alumbrado exterior sujetas al Reglamento de Eficiencia Energ&eacute;tica&nbsp;en alumbrado exterior&nbsp;(REEAE): </strong>Adem&aacute;s de lo requerido en el apartado antenior se completar&aacute; con:</p>
+<ul>
+<li><a href="/home_es/servicios/descargar-fichero/8zv5BSkbqxYxdZpXChD483gNHJGQZz/Certificado-EA.doc">Certificado Verificaci&oacute;n-EA</a><a href="/home_es/servicios/descargar-fichero/HkHKc9wgGv4BHyzHPVc33G96h7NYXZ/Fc7.09.091.doc"></a></li>
+<li><a href="/home_es/servicios/descargar-fichero/GwtrL8fdvV3DQy8zyxYQFyHd4gqwsJ/Fc7.09.090.doc">Memoria t&eacute;cnica EA</a> </li>
+</ul>
+<p><strong>NOTA:</strong> El proyecto y direcci&oacute;n de obra EA se presentar&aacute;n a trav&eacute;s de<strong> </strong><a href="http://www.navarra.es/home_es/Servicios/ficha/3588/Repositorio-de-proyectos-y-visados#documentacion" target="_blank"><strong>CONSIGNA</strong></a></p>
+<p>Se entregar&aacute; al usuario las instrucciones de uso y mantenimiento&nbsp;junto con&nbsp;la etiqueta que mide el consumo energ&eacute;tico de la instalaci&oacute;n de acuerdo con el modelo <a href="/home_es/servicios/descargar-fichero/mqcdQF556j1vjkxm14zc47thWqY6tk/Fc7.09.092.doc">Etiqueta-EA</a>,&nbsp;seg&uacute;n la ITC-EA-01</p>
+<p><strong>3.- Documentaci&oacute;n a presentar para cambio de titularidad:</strong></p>
+<ul>
+<li><a href="/home_es/servicios/descargar-fichero/XK2TfcPM1rC8ZSYfyQQ2Tcrmvy5sSJ/Cambio_titular.pdf">Solicitud de cambio de titularidad</a><a href="/home_es/servicios/descargar-fichero/CvY5Jk1v4D93dkqXfSSwFV2zBbDRvQ/Cambio_titular.pdf"></a></li>
+</ul>
+<p><strong>4.- Sistemas de seguridad equivalente y excepciones:</strong></p>
+<p>Cuando el titular o t&eacute;cnico de la instalaci&oacute;n quiera acogerse a la "Aplicaci&oacute;n de t&eacute;cnicas de seguridad equivalente" o a la consideraci&oacute;n de "Excepci&oacute;n", deber&aacute; <a href="/home_es/servicios/descargar-fichero/MD29YX6gj3Tfg5pJDfVNpV39mZTcf9/instancia-general-bilingue.doc">solicitar una autorizaci&oacute;n expresa</a> al Departamento, previa a la tramitaci&oacute;n de la documentaci&oacute;n que requiere la instalaci&oacute;n ante el Organismo Actuante.</p>
+<p><strong>5.- Solicitud de Suministro no interrumpible:</strong></p>
+<p>En aquellos casos en que, por las caracter&iacute;sticas del suministro, &eacute;ste no pueda ser interrumpido por contador, y en el Certificado de Instalaci&oacute;n existente no figure la potencia no interrumpible a contratar, se podr&aacute; tramitar dicha contrataci&oacute;n ante la compa&ntilde;&iacute;a suministradora de acuerdo con las siguientes pautas:</p>
+<ul>
+<li>Pautas para la contrataci&oacute;n (<a href="/home_es/servicios/descargar-fichero/K5WJq4MyzZJbXsH87bjd4tbtkW11CS/RESOL_108-2015_Suministros no interrumpibles.pdf">Resoluci&oacute;n</a>)</li>
+<li><a href="/home_es/servicios/descargar-fichero/xTPPvYbfGpj1QQVZnxmjkvWwBBd3CJ/Fc7.09.151.rev1.doc">Certificado de suministro el&eacute;ctrico no interrumpible</a></li>
+</ul>
+<p><strong>6.-&nbsp;Tramitaci&oacute;n telem&aacute;tica.</strong>&nbsp;Ser&aacute; imprescindible disponer de certificado digital o&nbsp;DNI electr&oacute;nico</p>
+<ul>
+<li><a title="Solicitud id" href="/home_es/servicios/descargar-fichero/mPm4S2Sd7Y26p12X2XySdbLhpNj8xs/ID_establecimientos.pdf">Solicitud</a> para <strong>la autorizaci&oacute;n para la consulta y acceso a los datos b&aacute;sicos (Id) de los establecimientos.</strong></li>
+<li><a href="/home_es/servicios/descargar-fichero/qFdxrqVBSTzT4YywfvgRP1Hqd4c9k3/Plantilla_BT_Derivaciones.xls">Tabla para la carga masiva</a>&nbsp;de derivaciones individuales en edificios de viviendas.</li>
+</ul>
+<p>&nbsp;</p></div>
+                                        
+                                    <!--TRAMITAR-->  
+                                  
+                                <div id="ctl00_Contenido_RptFicha_ctl00_pnlCOmoTramitar">
+	
+                                                                                                       
+                                    <span id="documentacion2" name="documentacion2"></span>
+                                                                      
+                                    <h3 class="titulo">¿Cómo tramitar?</h3>
+                                                       
+                                    <!--TRAMITES ONLINE--> 
+                                    
+                                        <h3 class="subtitulo lineasubtitulo">Por internet  </h3>
+                                            
+                                                <div class="tiny"><p><a href="/home_es/servicios/descargar-fichero/tLGyC2BBtmBFyV3XBLZHmTQ36rLNvr/Manual Usuario_RCI v 6.pdf">Manual</a> de usuario de la aplicaci&oacute;n.</p>
+<p>Para la tramitaci&oacute;n electr&oacute;nica por parte de los instaladores/as y t&eacute;cnicos/as competentes, ser&aacute; preciso obtener previamente la <strong>autorizaci&oacute;n para el acceso a los datos b&aacute;sicos (Id) de los establecimientos</strong>. Adjunte la <a href="/home_es/servicios/descargar-fichero/mPm4S2Sd7Y26p12X2XySdbLhpNj8xs/ID_establecimientos.pdf"><strong>solicitud</strong></a>, cumplimentada y firmada, y env&iacute;ela a trav&eacute;s de la primera opci&oacute;n del bot&oacute;n Tramitar.</p>
+<p>Requisitos t&eacute;cnicos:</p>
+<ol>
+<li>Con&nbsp;<a href="https://www.navarra.es/home_es/Temas/Administracion+electronica/Como+tramitar+los+servicios/Resuelve+tus+dudas/Guias+y+documentacion/Videos+de+ayuda/#punto2" target="_blank">certificado digital o DNI electr&oacute;nico</a>.</li>
+<li>Con DNI + PIN. <a href="http://bit.ly/2pyWpy9" target="_blank">C&oacute;mo obtener el PIN</a></li>
+<li>Con&nbsp;<a href="https://www.navarra.es/home_es/Temas/Administracion+electronica/Como+tramitar+los+servicios/Resuelve+tus+dudas/Guias+y+documentacion/Videos+de+ayuda/#punto5" target="_blank">Cl@ve</a>.</li>
+</ol></div>
+                                            
+                                            <div class="boton-solicitud">                                                                                        
+                                                    <span><a href="#bloque_ventana" id="ctl00_Contenido_RptFicha_ctl00_tramitar" class="prettyPhoto">Tramitar</a></span> 
+                                                    
+                                                    <img src="/AppsExt/Servicios/imgs/AyudaTramitacion.JPG" style="padding-left:10px;" alt="Ayuda"/><a href="http://www.navarra.es/home_es/Temas/Administracion+electronica/Como+tramitar+los+servicios/Resuelve+tus+dudas/Guias+y+documentacion/Videos+de+ayuda/" title="Ayuda para tramitación telemática" target="_blank" style="padding-left:2px;vertical-align:middle">Ayuda para tramitación telemática<br /></a> 
+                                                    
+                                             </div>
+                                             <!--`popup -->
+                                            <div id="bloque_ventana" class="div_tabs_documentacion grupo02" style="display:none"> 
+                                                            
+                                            <form id="formTramitarPopup" name="formTramitarPopup" method="post" action="/home_es/Servicios/ficha/2932/Registro-de-instalaciones-electricas-de-baja-tension">                         
+                                            <input type="hidden" name="btntramitarPopup" id="btntramitarPopup" class="oculto" value="1"/>
+                                            
+                                                    
+                                                    
+                                                        <div class="bloque_tramitacion">
+                                                    
+                                                        <h4 class="textocontenido"><b>Solicitud de acceso a los datos básicos (Id) de los establecimientos</b></h4>
+                                                        <div class="textocontenido"></div>
+                                                        
+                                                          
+                                                          
+                                                                        <div class="boton-solicitud-popup">
+                                                                        <span><input type="submit" value='Tramitar' onclick="window.open('https://administracionelectronica.navarra.es/RGE2/gestorinstancia.aspx?idinstancia=2001031');"/></span>
+                                                                        </div>
+                                                           
+                                                    </div>
+                                            
+                                                    
+                                                    
+                                                        <div class="bloque_tramitacion">
+                                                    
+                                                        <h4 class="textocontenido"><b>Registro de instalaciones</b></h4>
+                                                        <div class="textocontenido"></div>
+                                                        
+                                                          
+                                                          
+                                                                        <div class="boton-solicitud-popup">
+                                                                        <span><input type="submit" value='Acceso a la aplicación' onclick="window.open('https://administracionelectronica.navarra.es/RCI.WebExtranet/Default.aspx');"/></span>
+                                                                        </div>
+                                                           
+                                                    </div>
+                                            
+                                                    
+                                                    
+                                                        <div class="bloque_tramitacion">
+                                                    
+                                                        <h4 class="textocontenido"><b>Cambio de titularidad instalaciones seguridad industrial</b></h4>
+                                                        <div class="textocontenido"></div>
+                                                        
+                                                          
+                                                          
+                                                                        <div class="boton-solicitud-popup">
+                                                                        <span><input type="submit" value='Tramitar' onclick="window.open('https://administracionelectronica.navarra.es/RGE2/gestorinstancia.aspx?idinstancia=2001267');"/></span>
+                                                                        </div>
+                                                           
+                                                    </div>
+                                             
+                                         </form>
+                                        </div>       
+                                            
+                                    
+                                    <!--TRAMITE PRESENCIAL-->
+                                    
+                                        <h3 class="subtitulo lineasubtitulo">En las oficinas  </h3>
+                                        <div class="textocontenido txtcontenido"><p>Aquellos profesionales, titulares o representantes que requieran asistencia para realizar los tr&aacute;mites, podr&aacute;n recurrir a la tramitaci&oacute;n presencial a trav&eacute;s de una entidad colaboradora.</p>
+<p>Entidades colaboradoras:</p>
+<p>- <a href="https://extra.navarra.es/PortalRegistroEmpresasDIEE/BuscadorRegistroEmpresasDivCTramitacion.aspx" target="_blank">Organismos de Control</a></p>
+<p>- Colegios profesionales: <a href="http://www.coiina.com/" target="_blank">Colegio Oficial de Ingenieros Industriales de Navarra</a>&nbsp;y <a href="http://www.citinavarra.com/es/index.aspx" target="_blank">Colegio de Ingenieros T&eacute;cnicos Industriales de Navarra</a></p></div>
+                                      
+                                    <!--TRAMITES OTROS-->
+                                    
+                                    
+                                 
+</div>
+                                    <!--PASOS SIGUIENTES-->                       
+                                    
+                            
+                            
+                            <!--NORMATIVA-->
+                            
+                                <div class="accordion">
+                                    <h3>Normativa</h3>
+                                    <div class="textocontenido"><ul>
+<li><a href="https://www.navarra.es/home_es/Actualidad/BON/Boletines/2015/54/Anuncio-0/" target="_blank">Orden Foral 60/2015</a>, de 5 de marzo, por la que se regula el procedimiento que deben seguir los diferentes agentes y los titulares de las instalaciones sujetas a normas y reglamento de seguridad industrial</li>
+<li><a href="http://www.boe.es/buscar/doc.php?id=BOE-A-2008-18634" target="_blank">Real Decreto 1890/2008</a>, de 14 de noviembre, por el que se aprueba el Reglamento de eficiencia energ&eacute;tica en instalaciones de alumbrado exterior y sus Instrucciones t&eacute;cnicas complementarias EA-01 a EA-07. </li>
+<li><a href="http://www.boe.es/buscar/doc.php?id=BOE-A-2002-18099" target="_blank">Real Decreto 842/2002, de 2 de agosto</a> por el que se aprueba el Reglamento Electrot&eacute;cnico para baja tensi&oacute;n, modificado por <a href="http://www.boe.es/aeboe/consultas/bases_datos/doc.php?id=BOE-A-2010-8190" target="_blank">Real Decreto 560/2010, de 7 de mayo</a>&nbsp;(BOE n&ordm; 125 de 22/05/2010)&nbsp;</li>
+<li><a href="http://www.boe.es/buscar/doc.php?id=BOE-A-2000-24019" target="_blank">Real Decreto 1955/2000, de 1 de diciembre</a>, por el que se regulan las actividades de transporte, distribuci&oacute;n, comercializaci&oacute;n, suministro y procedimientos de autorizaci&oacute;n de instalaciones de energ&iacute;a el&eacute;ctrica (BOE n&ordm; 310, de 27/12/2000 y <a href="http://www.boe.es/buscar/doc.php?id=BOE-A-2001-4839" target="_blank">correcci&oacute;n de errores </a>BOE n&ordm; 62, de 13/30/2001).</li>
+</ul></div>
+                                </div>
+                            
+                            
+                            <!--CONTACTO-->
+                            <div class="accordion">
+                                
+                                    <h3>Contacto</h3>
+                                    <div class="tiny">
+                                        <p>Servicio de&nbsp;Energ&iacute;a, Minas y Seguridad Industrial<br />Parque Tom&aacute;s Caballero, n&ordm; 1, 5&ordf; Planta<br />31005 Pamplona (Navarra)<br /><br />Tel&eacute;fonos: 848 426 464 / 848 423 580<br />Correo electr&oacute;nico: <a href="mailto:instalaciones@navarra.es">instalaciones@navarra.es</a></p>
+<p>Para la resoluci&oacute;n de cuestiones tecnol&oacute;gicas e inform&aacute;ticas, puede dirigirse a:<br />Tel&eacute;fono: 948 013 555<br />Correo electr&oacute;nico: <a title="mailto:soporte.tecnico.hacienda@cfnavarra.es" href="mailto:soporte.tecnico.hacienda@cfnavarra.es">soporte.tecnico.hacienda@cfnavarra.es</a></p>
+                                            <p><strong>Organismo responsable - convocante</strong><br />
+                                            Departamento de Desarrollo Econ&#243;mico
+                                    </div>
+                                
+                            </div>
+                            <br />
+				        </div>
+				        <div id="Resultados">
+				            
+				        </div>
+				    </div>
+				</div>
+			
+        <!--ADVERTENCIA-->
+        
+            <div class="col-xs-12">
+		        <div class="row">
+                    <p class="advertencia">
+                        <strong>Advertencia:</strong>
+                        El contenido de esta página tiene carácter meramente informativo. Las condiciones de este procedimiento son las publicadas en la normativa correspondiente.
+                    </p>
+                </div>
+            </div>
+        		                         
+        <!---->
+         
+            <div class="col-xs-12 relacionados">
+		        <div class="row">
+		            
+		                <div class="col-xs-12 col-sm-3 titular">
+			                Enlaces relacionados
+		                </div>
+		                <div class="col-xs-12 col-sm-9">
+		                        
+		                    <!--TRAMITES RELACIONADOS-->
+                            
+                                
+                                
+          
+                            <!-- ENLACES DE INTERES -->
+                            
+                                
+                                    <div class="col-xs-12 col-sm-6 relacionado desc-rel">
+                    	                <a href="http://www.navarra.es/home_es/Temas/Administracion+electronica/Como+tramitar+los+servicios/Resuelve+tus+dudas/Guias+y+documentacion/Videos+de+ayuda/" title="Guía para tramitar por internet" target="_blank">Guía para tramitar por internet<br /></a>
+                    	            </div>
+                   	            
+                                
+                                
+                                    <div class="col-xs-12 col-sm-6 relacionado desc-rel">
+                    	                <a href="http://www.f2i2.net/legislacionseguridadindustrial/SeguridadIndustrial.aspx" title="Ministerio de Industria" target="_blank">Ministerio de Industria<br /></a>
+                    	            </div>
+                   	            
+                                    <div class="col-xs-12 col-sm-6 relacionado desc-rel">
+                    	                <a href="http://www.navarra.es/home_es/Temas/Empleo+y+Economia/Empresa+e+innovacion/" title="web seguridad industrial" target="_blank">web seguridad industrial<br /></a>
+                    	            </div>
+                   	            
+                                
+                        </div>
+                    
+                </div>
+            </div>
+        
+      
+       
+        
+	   
+         
+    	<div style="display:none">
+    	    
+            <div class="columna_4">
+        	    
+                    <p><strong>Del departamento de&nbsp;</strong></p>
+                    <ul class="lista02">
+                        
+                    </ul>
+                   
+            </div>
+        </div>   
+            
+        
+        
+        <!--TE INTERESA-->    
+        <div class="col-xs-12 relacionados">
+		    <div class="row">
+                <div class="col-xs-12 col-sm-3 titular">
+			        &iquest;Le interesa este servicio? 
+		        </div>
+		        <div class="col-xs-12 col-sm-9 carpeta">
+                    <div class="col-xs-12 col-sm-6 txt_carpeta">
+                        En la <a href="http://www.navarra.es/home_es/Servicios/Recursos/Carpeta+Ciudadana.htm" target="_blank" >carpeta ciudadana</a> podr&aacute; consultar sus expedientes, realizar consultas administrativas... para ello necesita certificado digital.
+                    </div>
+                    <div class="col-xs-12 col-sm-6 carpeta_ciudadana">
+                        <!---->
+                        
+                	        <div class="msg_carpeta"><a href="https://administracionelectronica.navarra.es/CarpetaCiudadana/AltaServicios.aspx?idservicio=2932" title="Guardar en los favoritos deMi Carpeta Ciudadana">Guardar en los favoritos de<br /></a></div>
+                	        <div class="img_carpeta"><a href="https://administracionelectronica.navarra.es/CarpetaCiudadana/AltaServicios.aspx?idservicio=2932" title="Guardar en los favoritos deMi Carpeta Ciudadana"><img src="/appsext/Servicios/imgs/carpeta.png" />Mi Carpeta Ciudadana</a></div>
+                	        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+        <!--IMPRIMIR/COMPARTIR--->
+        <div class="columna_2" style="display:none">
+        	<p class="imprimir"><a href="#print" title="Imprimir">Imprimir</a></p>
+            <noscript>
+            	<p> Para imprimir, utilice la opción del navegador</p>
+            </noscript>
+            
+                 <div class="contenido_centrado">
+                    <p class="btn_txt-dbl_rdn"><a href="#bloque_ventana" class="prettyPhoto">Tramitar</a></p>                
+                 </div>
+             
+            
+        </div>                  
+    </div>
+    
+</div>
+ <!--COMPARTIR twitter y facebook-->
+    <!--    
+  <div class="container" style="background:#fff;width:100%;margin:0px 0px -15px 0px;">
+    <div class="col-xs-12">
+        <div class="container">
+            <div class="col-xs-12" style="text-align:right">
+                <div id="compartir">
+    	            <a href="http://twitthis.com/twit?url=http://www.navarra.es/home_es/Servicios/ficha/2932/Registro-de-instalaciones-electricas-de-baja-tension" target="_blank" title="Comparta en Twitter"><img src="/AppsExt/Servicios/imgs/twit.png" alt="Twitter" />
+    	            Twitter </a>
+		            <a href="http://www.facebook.com/share.php?u=http://www.navarra.es/home_es/Servicios/ficha/2932/Registro-de-instalaciones-electricas-de-baja-tension" target="_blank" title="Comparta en Facebook"><img src="/AppsExt/Servicios/imgs/fb.png" alt="Facebook" />
+		            Facebook </a>
+		        </div>
+		    </div>
+		</div>
+    </div>
+  </div>  -->
+
+        </div>
+        <div class="row-content fondoblanco">
+            <div class="container">
+                <div class="col-xs-12">
+                    
+                        <div id="pie">
+                            
+<!--googleoff: all-->
+<a href="http://www.navarra.es" class="gobiernoNavarra">
+    <img src="/es/imgs/logo.gobierno-de-navarra.gif"
+         alt="Gobierno de Navarra" />
+</a>
+<p>
+<a href="/home_es/Indices/Sugerencias/default.htm" accesskey="c">Contacte con nosotros</a> | 
+<a href="/home_es/Aviso/accesibilidad.htm" accesskey="2">Accesibilidad</a> | 
+<a href="/home_es/Aviso/avisoLegal.htm">Aviso legal</a> | 
+<a href="/home_es/Indices/Mapa+web/" accesskey="m">Mapa web</a>
+</p>
+<!--googleon: all-->
+
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+	
+
+
+    <script type="text/javascript">
+    <!--
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47297284-2']);
+  _gaq.push(['_setDomainName', 'navarra.es']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+	
+	
+    //-->
+    </script>
+
+	 <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  
+  (function() {
+     
+	   var u="//estadisticasweb.navarra.es/"; 
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '2']);
+	_paq.push(['setCustomVariable', 1, 'Idioma', 'Castellano', 'page']);
+	_paq.push(['setCustomVariable', 2, 'Departamento', 'Generico_Navarra', 'page']);
+	
+	var localDomains = '*.navarra.es'.trim();
+	if(localDomains){
+		_paq.push(['setDomains', localDomains.split(',')]);
+	}
+
+	/* tag descargas */
+	var regexExtensionBetweenBrackets = /\(\w*\)/gm;
+	var extensionsSource = '[^?#]*\\.((doc)|(xls)|(xlw)|(ppt)|(pdf)|(rtf)|(ods)|(odt)|(epub)|(rar)|(exe)|(odp)|(kml)|(json)|(csv)|(shp)|(xml))([?#]|$)';
+	var extensionsBetweenBrackets = extensionsSource.match(regexExtensionBetweenBrackets);
+	var regexOpenBracket = /\(/gm;
+	var regexCloseBracket = /\)/gm;
+	var extensionsTarget = extensionsBetweenBrackets.join('|').replace(regexOpenBracket,'').replace(regexCloseBracket,'');
+	_paq.push(['setDownloadExtensions', extensionsTarget]);
+	
+	_paq.push(['setCookieDomain', '.navarra.es']);	
+	_paq.push(['setDocumentTitle', 'Fichas::'.replace(/::/g, '/') + document.title]);
+	_paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+	
+ 
+   
+  
+</body>
+</html>

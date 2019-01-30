@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="content-language" content="es" /> 
+<title>AENOR - Normas UNE on-line</title>
+<link rel="shortcut icon" href="../../imgs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="../../librerias/jq/1.9.1/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../librerias/jq/1.9.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" media="all" type="text/css" href="../../estilos/default.css" />
+<link rel="stylesheet" media="all" type="text/css" href="../../estilos/menu.css" />
+<link rel="stylesheet" media="all" type="text/css" href="../../estilos/css.css" />
+<link rel="stylesheet" media="all" type="text/css" href="../../estilos/listado.css" />
+<link href="../../estilos/base/jquery-ui.css" media="all" type="text/css" rel="stylesheet" />
+</head>
+<body>	
+	<!-- Contenedor-->
+	<div id="wrapper">	
+		
+<script type="text/javascript">
+	var jDireccion = 'http://portal.aenormas.aenor.com/aenor';
+	var jDireccionSeg = 'https://portal.aenormas.aenor.com/aenor';
+	var jPaisEspania = 'ES';	
+</script>
+
+<div id="info">
+	
+		<h1><a accesskey="0" id="logoempresa" title="Ir a la página de inicio. Tecla acceso 0" href="http://www.aenor.es">
+<img alt="AENOR – Asociación Española de Normalización y Certificación" src="../../imgs/imgLogoAenorNeu.jpg" /></a></h1>
+		
+	<div id="mnuBarra">		
+		<ul id="opciones_superior">						
+			<li><div class="menu_boton_google myoutube"><a href="http://www.youtube.com/aenorchannel" target="new" title="Visite el canal de AENOR en Youtube"><img alt="Visite el canal de AENOR en Youtube" src="../../imgs/redessoc/Ico_Youtube_color.gif" /></a></div></li>
+			<li><div class="menu_boton_google mtwitter"><a href="https://twitter.com/AENOR" target="new" title="AENOR en Twitter"><img alt="AENOR en Twitter" src="../../imgs/redessoc/Ico_Twitter_color.jpg" /></a></div></li>
+			<li><div class="menu_boton_google mlinkedin"><a href="http://www.linkedin.com/company/aenor" target="new" title="AENOR en Linkedin"><img alt="AENOR en Linkedin" src="../../imgs/redessoc/Ico_Link_color.gif" /></a></div></li>								
+			<li>
+				<table width="410px"><tr><td>&nbsp;</td></tr></table>
+				
+			</li>
+			<li><a href="http://aenormas.aenor.es" title="Web externa, se abrirá una ventana nueva" target ="_blank"><img src="../../imgs/aenormas/aenormascolor200.png" alt = "" title="Web externa, se abrirá una ventana nueva" /></a></li>
+			<li>			
+			
+				<div class="menu_clientes"><a accesskey="2" id="mnuareacli" title="Entrada área de clientes" href="https://portal.aenormas.aenor.com/aenor/cliente/cliente/accesoclientes.asp"><img alt="Área de clientes" src="../../imgs/mnuAreaClientes_off.jpg" /></a></div>
+			
+			</li>			
+		</ul>		
+	</div>	
+</div>
+
+		<div id="lateral_izquierdo">
+				
+<script type="text/javascript">
+	/* <![CDATA[ */
+	
+	function mover(ruta)
+		/* Redirigimos a otra página*/
+		{										
+			window.location = ruta; 
+		}
+	/* ]]> */
+</script>
+<div id="lsmenu">
+	<ul>		
+		<li class="primero"><a href="https://portal.aenormas.aenor.com/aenor/suscripciones/personal/pagina_per_sus.asp" class="current">AENORMÁS</a>
+			
+				<ul class="nodo">
+															
+					<li><p class="bajo"><a href="http://aenormas.aenor.es/es/colecciones-de-normas/colecciones-aenor" target="_blank" title="Enlace a la página de AENORMÁS. Se abrirá una ventana nueva." >Colecciones de normas recomendadas por AENOR</a></p></li>
+				</ul>
+			
+		</li>
+	</ul>
+</div>		
+		</div>					
+		<div id='central_exp'><h2>AENORMÁS. Solución on-line para la gestión de sus normas UNE.</h2><br /><br /><div class='descripcion'><p class='TextoCentrado'>Su sesión ha expirado. Por favor, vuelva a identificarse.</p></div><br /></div><hr /></div></body></html>

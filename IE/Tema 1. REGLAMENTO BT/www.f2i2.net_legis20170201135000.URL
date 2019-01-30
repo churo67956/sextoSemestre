@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="es" lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Guía Técnica de aplicación al Reglamento Electrotécnico de Baja Tensión</title>
+<link rel="stylesheet" type="text/css" href="estilos/M14/subsitios.css" />
+<link rel="stylesheet" type="text/css" href="estilos/M14/print.css" media="print" />
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="estilos/M14/estilo-IE7.css.css" />
+<![endif]-->
+<meta name="description" content="" />
+<meta name="autor" content="Ministerio de Industria, Comercio y Turismo" />
+<meta name="keywords" content="Industria, Legislación, Seguridad" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+</head>
+<body class="industria subsitios">
+<div class="container">
+<div class="banner">
+<div class="header">
+<div class="logoministerio">
+<a href="https://www.mincotur.gob.es/"><img src="images/M14/logo-mincotur.png" alt="Ministerio de Industria, Comercio y Turismo"/></a>
+<img src="images/secretaria_industria_mincotur.gif" id="ctl00_Cabecera_imgSeccion" alt="Secretaria General de Industria y de la Pequeña y Mediana Empresa" class="industria"/></div>
+<div class="opciones">
+</div>
+<div class="buscador">
+</div>
+</div>
+</div>
+<div class="menu-principal-subsitios">
+<p class="skip"><span id="ctl00_PlaceHolderHorizontalNav_Menu_MitycLabel1">Menú Principal de Navegación</span>
+</p>
+<ul>
+<li id="ctl00_PlaceHolderHorizontalNav_Menu_repMenuH_ctl01_Li1"><a href="https://www.mincotur.gob.es/es-es/Paginas/Index.aspx" title='Inicio' title="Inicio" >Inicio</a></li>
+<li id="ctl00_PlaceHolderHorizontalNav_Menu_repMenuH_ctl02_Li1"><a href="https://www.mincotur.gob.es/es-es/Paginas/ministerio.aspx" title='El Ministerio' title="El Ministerio" >El Ministerio</a></li>
+<li id="ctl00_PlaceHolderHorizontalNav_Menu_repMenuH_ctl03_Li1"><a href="https://www.mincotur.gob.es/industria/es-es" title='Industria y PYME' title="Industria y PYME" class="activo" >Industria y PYME</a></li>
+<li id="ctl00_PlaceHolderHorizontalNav_Menu_repMenuH_ctl04_Li1"><a href="https://www.mincotur.gob.es/comercio/es-es" title='Comercio' title="Comercio" >Comercio</a></li>
+<li id="ctl00_PlaceHolderHorizontalNav_Menu_repMenuH_ctl05_Li1"><a href="https://www.mincotur.gob.es/turismo/es-es" title='Turismo' title="Turismo" >Turismo</a></li>
+<li id="ctl00_PlaceHolderHorizontalNav_Menu_repMenuH_ctl06_Li1"><a href="https://www.mincotur.gob.es/energia/es-es" title='(Energía)' title="(Energía)" >(Energía)</a></li>
+<li id="ctl00_PlaceHolderHorizontalNav_Menu_repMenuH_ctl07_Li1"><a href="https://www.mincotur.gob.es/telecomunicaciones/es-es" title='(Avance Digital)' title="(Avance Digital)" >(Avance Digital)</a></li>
+</ul>
+</div>
+<div class="contenido">
+<div id="ctl00_PlaceHolderTitleBreadcrumb_MigaDePan_panelMiga" class="breadcrumb">
+<span id="ctl00_PlaceHolderTitleBreadcrumb_MigaDePan_MitycLabel1">Est&aacute;s en:</span>
+<ol>
+<li><span class="first"></span>
+<a href="https://www.mincotur.gob.es/industria/es-es" title='Industria y PYME' id="ctl00_PlaceHolderTitleBreadcrumb_MigaDePan_repMigaIni_ctl01_lnkEnlaceMiga" >Industria y PYME</a></li>
+<li><span class="raquo"></span>
+<a href="default.aspx" title='Calidad y Seguridad Industrial' id="ctl00_PlaceHolderTitleBreadcrumb_MigaDePan_repMigaIni_ctl02_lnkEnlaceMiga" >Calidad y Seguridad Industrial</a></li>
+<li><span class="raquo"></span>
+<a href="SI_ambitoLista.aspx?TipoAmbito=Instalaciones+Industriales" title='Instalac. Industriales' id="ctl00_PlaceHolderTitleBreadcrumb_MigaDePan_repMigaIni_ctl03_lnkEnlaceMiga" >Instalac. Industriales</a></li>
+<li><span class="raquo"></span>
+<a href="Si_ambito.aspx?id_am=76" title='REBT de 2002' id="ctl00_PlaceHolderTitleBreadcrumb_MigaDePan_repMigaIni_ctl04_lnkEnlaceMiga" >REBT de 2002</a></li>
+<li id="ctl00_PlaceHolderTitleBreadcrumb_MigaDePan_liPaginaActual"><span class="raquo"></span>
+<span class="fin_path">Guía Técnica de aplicación al Reglamento Electrotécnico de Baja Tensión</span>
+</li>
+</ol>
+</div>
+<div class="imagen-subsitio">
+</div>
+<div id="ctl00_tituloSubsitio_dvTituloSubsitio" class="titulo-subsitio">
+<a href="default.aspx" title='Temas de interés en Calidad y Seguridad Industrial'  >Temas de interés en Calidad y Seguridad Industrial</a></div>
+<div class="sidebar-a">
+<div class="menu">
+<ul>
+<li  class="inactivo1"><a href="default.aspx" title='Presentación' title="Presentación" >Presentación</a></li>
+<li  class="inactivo1"><a href="SI_ambitoLista.aspx?TipoAmbito=Legislaci%c3%b3n+General" title='Legislación General' title="Legislación General" >Legislación General</a></li>
+<li  class="inactivo1"><a href="SI_ambitoLista.aspx?TipoAmbito=Calidad" title='Calidad' title="Calidad" >Calidad</a></li>
+<li  class="activo1"><a href="SeguridadIndustrial.aspx" title='Seguridad Industrial' title="Seguridad Industrial" >Seguridad Industrial</a><ul>
+<li  class="inactivo2"><a href="SI_ambitoLista.aspx?TipoAmbito=Productos+Industriales" title='Productos Industriales' title="Productos Industriales" >Productos Industriales</a></li>
+<li  class="activo2"><a href="SI_ambitoLista.aspx?TipoAmbito=Instalaciones+Industriales" title='Instalac. Industriales' title="Instalac. Industriales" >Instalac. Industriales</a></li>
+</ul>
+</li>
+<li  class="inactivo1"><a href="Vehiculos.aspx" title='Vehículos' title="Vehículos" >Vehículos</a></li>
+<li  class="inactivo1"><a href="VigilanciaMercado.aspx" title='Vigilancia del Mercado' title="Vigilancia del Mercado" >Vigilancia del Mercado</a></li>
+<li  class="inactivo1"><a href="OrganismosNotificados.aspx" title='Organismos Notificados' title="Organismos Notificados" >Organismos Notificados</a></li>
+<li  class="inactivo1"><a href="UnidadMercado.aspx" title='Unidad de Mercado' title="Unidad de Mercado" >Unidad de Mercado</a></li>
+<li  class="inactivo1"><a href="Si_Ambito.aspx?id_am=99000" title='Participación Pública' title="Participación Pública" >Participación Pública</a></li>
+<li  class="inactivo1"><a href="Jornadas.aspx" title='Jornadas' title="Jornadas" >Jornadas</a></li>
+<li  class="inactivo1"><a href="Busqueda.aspx" title='Buscar en esta web' title="Buscar en esta web" >Buscar en esta web</a></li>
+<li  class="inactivo1"><a href="ArbolWeb.aspx" title='Mapa Web' title="Mapa Web" >Mapa Web</a></li>
+</ul>
+</div>
+</div>
+<div id="contenido" class="content-ancho">
+<h1 id="ctl00_tituloSubNiveles_nivel" class="home">Guía Técnica de aplicación al Reglamento Electrotécnico de Baja Tensión</h1>
+<p>En aplicación del artículo 29 del REBT, se publican los cuatro primeros capítulos de la Guía Técnica, de carácter no vinculante, para la aplicación del Reglamento y sus Instrucciones Técnicas Complementarias</p>
+<a name=''></a>
+<DIV><H2 class="Separacion"><span style="font-weight:bold">HISTÓRICO DE REVISIONES</span></H2><ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Septiembre 2003</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Primera edición</LI>
+</ul>
+</ul>
+<ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Revisión de Septiembre 2004</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Índice de Unidades Temáticas (Rev.2)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT_28. Instalaciones en locales de pública concurrencia (Rev.2)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-09. Instalaciones de alumbrado exterior (Rev.1)</LI>
+</ul>
+</ul>
+<ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Revisión de Octubre 2005</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Índice de Unidades Temáticas (Rev.3)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-08. Sistemas de conexión del neutro y de las masas en redes de distribución de energía eléctrica (Rev.1)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-18. Instalaciones de puesta a tierra (Rev. 1)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-22. Protección contra sobreintensidades (Rev. 1)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-23. Protección contra sobretensiones (Rev. 1)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-24. Protección contra los contactos directos e indirectos (Rev.1)</LI>
+</ul>
+</ul>
+<ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Revisión de Febrero 2007</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Índice de Unidades Temáticas (Rev.4)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-51. Instalaciones de sistemas de automatización, gestión técnica de la energía y seguridad para viviendas y edificios</LI>
+</ul>
+</ul>
+<ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Revisión de Febrero 2009</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Índice de Unidades Temáticas (Rev.5)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-19. Instalaciones interiores o receptoras. prescripciones generales (Rev.2)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-30. Instalaciones en locales de características especiales (Rev.1)</LI>
+</ul>
+</ul>
+<ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Revisión de Julio 2012</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Índice de Unidades Temáticas (Rev.6)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-23. Protección contra sobretensiones (Rev.2)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-25. Instalaciones interiores en viviendas. Número de circuitos y características (Rev. 2)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-29. Instalaciones eléctricas en locales con riesgo de incendio o explosión (Rev. 1)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-33. Instalaciones provisionales y temporales de obras (Rev. 1)</LI>
+</ul>
+</ul>
+<ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Revisión de Noviembre 2013</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+BT-40. Instlaciones generadoras de baja tensión (Rev. 1)</LI>
+</ul>
+</ul>
+<ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Revisión de Febrero 2015</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+BT-29. Instalaciones eléctricas en locales con riesgo de incendio o explosión (Rev. 2)</LI>
+</ul>
+</ul>
+<ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Revisión de Septiembre 2015</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+BT-28. Instalaciones en locales de pública concurrencia (Rev.3)</LI>
+</ul>
+</ul>
+<ul style="padding-left:0px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Revisión de Noviembre de 2017</LI>
+<ul style="padding-left:20px;padding-bottom:5px;" >
+<LI class=listanormal style="padding-left:20px;">
+Índice de Unidades Temáticas (Rev.7)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-23. Protección contra sobretensiones (Rev. 3)</LI>
+<LI class=listanormal style="padding-left:20px;">
+BT-52. Infraestructura para la recarga de vehículos eléctricos (Rev. 1)</LI>
+</ul>
+</ul>
+</div>  <div class="subir">
+    <a href="#contenido" title="">
+      <span id="ctl00_PlaceHolderMain_MitycLabel2">Subir</span>
+    </a>
+  </div>
+<a name=''></a>
+<DIV><H2 class="Separacion"><span style="font-weight:bold">GUÍA TÉCNICA DE APLICACIÓN DEL REBT ACTUALIZADA EN REVISIÓN DE NOVIEMBRE DE 2017</span></H2><a name='INTRODUCCIÓNEÍNDICE'></a>
+<DIV style="padding-left:20px;" ><H3>INTRODUCCIÓN E ÍNDICE</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_introduccion.pdf" title='Introducción' style="background-image:none;padding-left:0px;" >Introducción</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_indice_nov17R7.pdf" title='Índice de Unidades Temáticas' style="background-image:none;padding-left:0px;" >Índice de Unidades Temáticas</a>. Edición: Noviembre 2017; Revisión: 7</li></ul></div><a name='1.ASPECTOSGENERALES'></a>
+<DIV style="padding-left:20px;" ><H3>1. ASPECTOS GENERALES</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_rd_842_02_sep03R1.pdf" title='REAL DECRETO 842/2002' style="background-image:none;padding-left:0px;" >REAL DECRETO 842/2002</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_03_sep03R1.pdf" title='BT-03. INSTALADORES AUTORIZADOS EN BAJA TENSIÓN' style="background-image:none;padding-left:0px;" >BT-03. INSTALADORES AUTORIZADOS EN BAJA TENSIÓN</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_04_sep03R1.pdf" title='BT-04. DOCUMENTACIÓN Y PUESTA EN SERVICIO DE LAS INSTALACIONES' style="background-image:none;padding-left:0px;" >BT-04. DOCUMENTACIÓN Y PUESTA EN SERVICIO DE LAS INSTALACIONES</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_05_sep03R1.pdf" title='BT-05. VERIFICACIONES E INSPECCIONES' style="background-image:none;padding-left:0px;" >BT-05. VERIFICACIONES E INSPECCIONES</a>. Edición: Septiembre 2003; Revisión: 1</li></ul></div><a name='2.INSTALACIONESDEENLACE'></a>
+<DIV style="padding-left:20px;" ><H3>2. INSTALACIONES DE ENLACE</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_10_sep03R1.pdf" title='BT-10. PREVISIÓN DE CARGAS PARA SUMINISTROS EN BAJA TENSIÓN' style="background-image:none;padding-left:0px;" >BT-10. PREVISIÓN DE CARGAS PARA SUMINISTROS EN BAJA TENSIÓN</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_12_sep03R1.pdf" title='BT-12. ESQUEMAS' style="background-image:none;padding-left:0px;" >BT-12. ESQUEMAS</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_13_sep03R1.pdf" title='BT-13. CAJAS GENERALES DE PROTECCIÓN' style="background-image:none;padding-left:0px;" >BT-13. CAJAS GENERALES DE PROTECCIÓN</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_14_sep03R1.pdf" title='BT-14. LÍNEA GENERAL DE ALIMENTACIÓN' style="background-image:none;padding-left:0px;" >BT-14. LÍNEA GENERAL DE ALIMENTACIÓN</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_15_sep03R1.pdf" title='BT-15. DERIVACIONES INDIVIDUALES' style="background-image:none;padding-left:0px;" >BT-15. DERIVACIONES INDIVIDUALES</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_16_sep03R1.pdf" title='BT-16. CONTADORES: UBICACIÓN Y SISTEMAS DE INSTALACIÓN' style="background-image:none;padding-left:0px;" >BT-16. CONTADORES: UBICACIÓN Y SISTEMAS DE INSTALACIÓN</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_17_sep03R1.pdf" title='BT-17. DISPOSITIVOS GENERALES E INDIVIDUALES DE MANDO Y PROTECCIÓN. INTERRUPTOR DE CONTROL DE POTENCIA' style="background-image:none;padding-left:0px;" >BT-17. DISPOSITIVOS GENERALES E INDIVIDUALES DE MANDO Y PROTECCIÓN. INTERRUPTOR DE CONTROL DE POTENCIA</a>. Edición: Septiembre 2003; Revisión: 1</li></ul></div><a name='3.INSTALACIONESINTERIORES'></a>
+<DIV style="padding-left:20px;" ><H3>3. INSTALACIONES INTERIORES</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_19_feb09R2.pdf" title='BT-19. INSTALACIONES INTERIORES O RECEPTORAS. PRESCRIPCIONES GENERALES' style="background-image:none;padding-left:0px;" >BT-19. INSTALACIONES INTERIORES O RECEPTORAS. PRESCRIPCIONES GENERALES</a>. Edición: Febrero 2009; Revisión: 2</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_20_sep03R1.pdf" title='BT-20. INSTALACIONES INTERIORES O RECEPTORAS. SISTEMAS DE INSTALACIÓN' style="background-image:none;padding-left:0px;" >BT-20. INSTALACIONES INTERIORES O RECEPTORAS. SISTEMAS DE INSTALACIÓN</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_21_sep03R1.pdf" title='BT-21. TUBOS Y CANALES PROTECTORAS' style="background-image:none;padding-left:0px;" >BT-21. TUBOS Y CANALES PROTECTORAS</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_25_jul12R2.pdf" title='BT-25. INSTALACIONES INTERIORES EN VIVIENDAS. NÚMERO DE CIRCUITOS Y CARACTERÍSTICAS' style="background-image:none;padding-left:0px;" >BT-25. INSTALACIONES INTERIORES EN VIVIENDAS. NÚMERO DE CIRCUITOS Y CARACTERÍSTICAS</a>. Edición: Julio 2012; Revisión: 2</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_26_sep03R1.pdf" title='BT-26. INSTALACIONES INTERIORES EN VIVIENDAS. PRESCRIPCIONES GENERALES DE INSTALACIÓN' style="background-image:none;padding-left:0px;" >BT-26. INSTALACIONES INTERIORES EN VIVIENDAS. PRESCRIPCIONES GENERALES DE INSTALACIÓN</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_27_sep03R1.pdf" title='BT-27. LOCALES QUE CONTIENEN UNA BAÑERA O DUCHA' style="background-image:none;padding-left:0px;" >BT-27. LOCALES QUE CONTIENEN UNA BAÑERA O DUCHA</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_49_sep03R1.pdf" title='BT-49. INSTALACIONES ELÉCTRICAS EN MUEBLES' style="background-image:none;padding-left:0px;" >BT-49. INSTALACIONES ELÉCTRICAS EN MUEBLES</a>. Edición: Septiembre 2003; Revisión: 1</li></ul></div><a name='4.INSTALACIONESENLOCALESDEPÚBLICACONCURRENCIA'></a>
+<DIV style="padding-left:20px;" ><H3>4. INSTALACIONES EN LOCALES DE PÚBLICA CONCURRENCIA</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_28_mar15R3.pdf" title='BT-28. INSTALACIONES EN LOCALES DE PÚBLICA CONCURRENCIA' style="background-image:none;padding-left:0px;" >BT-28. INSTALACIONES EN LOCALES DE PÚBLICA CONCURRENCIA</a>. Edición: Marzo 2015; Revisión: 3</li></ul></div><a name='5.INSTALACIONESDEALUMBRADOEXTERIOR'></a>
+<DIV style="padding-left:20px;" ><H3>5. INSTALACIONES DE ALUMBRADO EXTERIOR</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_09_sep04R1.pdf" title='BT-09. INSTALACIONES DE ALUMBRADO EXTERIOR' style="background-image:none;padding-left:0px;" >BT-09. INSTALACIONES DE ALUMBRADO EXTERIOR</a>. Edición: Septiembre 2004; Revisión: 1</li></ul></div><a name='6.PROTECCIONES'></a>
+<DIV style="padding-left:20px;" ><H3>6. PROTECCIONES</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_08_oct05R1.pdf" title='BT-08. SISTEMAS DE CONEXIÓN DEL NEUTRO Y DE LAS MASAS EN REDES DE DISTRIBUCIÓN DE ENERGÍA ELÉCTRICA' style="background-image:none;padding-left:0px;" >BT-08. SISTEMAS DE CONEXIÓN DEL NEUTRO Y DE LAS MASAS EN REDES DE DISTRIBUCIÓN DE ENERGÍA ELÉCTRICA</a>. Edición: Octubre 2005; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_18_oct05R1.pdf" title='BT-18. INSTALACIONES DE PUESTA A TIERRA' style="background-image:none;padding-left:0px;" >BT-18. INSTALACIONES DE PUESTA A TIERRA</a>. Edición: Octubre 2005; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_22_oct05R1.pdf" title='BT-22. PROTECCIÓN CONTRA SOBREINTENSIDADES' style="background-image:none;padding-left:0px;" >BT-22. PROTECCIÓN CONTRA SOBREINTENSIDADES</a>. Edición: Octubre 2005; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_23_nov17R3.pdf" title='BT-23. PROTECCIÓN CONTRA SOBRETENSIONES' style="background-image:none;padding-left:0px;" >BT-23. PROTECCIÓN CONTRA SOBRETENSIONES</a>. Edición: Noviembre 2017; Revisión: 3</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_24_oct05R1.pdf" title='BT-24. PROTECCIÓN CONTRA LOS CONTACTOS DIRECTOS E INDIRECTOS' style="background-image:none;padding-left:0px;" >BT-24. PROTECCIÓN CONTRA LOS CONTACTOS DIRECTOS E INDIRECTOS</a>. Edición: Octubre 2005; Revisión: 1</li></ul></div><a name='7.INSTALACIONESDOMÓTICAS'></a>
+<DIV style="padding-left:20px;" ><H3>7. INSTALACIONES DOMÓTICAS</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_51_feb07R1.pdf" title='BT-51. INSTALACIONES DE SISTEMAS DE AUTOMATIZACIÓN, GESTIÓN TÉCNICA DE LA ENERGÍA Y SEGURIDAD PARA VIVIENDAS Y EDIFICIOS' style="background-image:none;padding-left:0px;" >BT-51. INSTALACIONES DE SISTEMAS DE AUTOMATIZACIÓN, GESTIÓN TÉCNICA DE LA ENERGÍA Y SEGURIDAD PARA VIVIENDAS Y EDIFICIOS</a>. Edición: Febrero 2007; Revisión: 1</li></ul></div><a name='8.INSTALACIONESESPECIALES'></a>
+<DIV style="padding-left:20px;" ><H3>8. INSTALACIONES ESPECIALES</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_29_feb15R2.pdf" title='BT-29. INSTALACIONES ELÉCTRICAS DE LOS LOCALES CON RIESGO DE INCENDIO O EXPLOSIÓN' style="background-image:none;padding-left:0px;" >BT-29. INSTALACIONES ELÉCTRICAS DE LOS LOCALES CON RIESGO DE INCENDIO O EXPLOSIÓN</a>. Edición: Febrero 2015; Revisión: 2</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_30_feb09R1.pdf" title='BT-30. INSTALACIONES EN LOCALES DE CARACTERÍSTICAS ESPECIALES' style="background-image:none;padding-left:0px;" >BT-30. INSTALACIONES EN LOCALES DE CARACTERÍSTICAS ESPECIALES</a>. Edición: Febrero 2009; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_33_jul12R1.pdf" title='BT-33. INSTALACIONES PROVISIONALES Y TEMPORALES DE OBRAS' style="background-image:none;padding-left:0px;" >BT-33. INSTALACIONES PROVISIONALES Y TEMPORALES DE OBRAS</a>. Edición: Julio 2012; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/Guia_bt_40_sep13R1.pdf" title='BT-40. INSTALACIONES GENERADORAS DE BAJA TENSIÓN' style="background-image:none;padding-left:0px;" >BT-40. INSTALACIONES GENERADORAS DE BAJA TENSIÓN</a>. Edición: Septiembre 2013; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_52_nov17R1.pdf" title='BT-52. INFRAESTRUCTURA PARA LA RECARGA DE VEHÍCULOS ELÉCTRICOS' style="background-image:none;padding-left:0px;" >BT-52. INFRAESTRUCTURA PARA LA RECARGA DE VEHÍCULOS ELÉCTRICOS</a>. Edición: Noviembre 2017; Revisión: 1</li></ul></div><a name='ANEXOS'></a>
+<DIV style="padding-left:20px;" ><H3>ANEXOS</H3><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_anexo_1_sep03R1.pdf" title='SIGNIFICADO Y EXPLICACIÓN DE LOS CÓDIGOS IP, IK' style="background-image:none;padding-left:0px;" >SIGNIFICADO Y EXPLICACIÓN DE LOS CÓDIGOS IP, IK</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_anexo_2_sep03R1.pdf" title='CÁLCULO DE CAÍDAS DE TENSIÓN' style="background-image:none;padding-left:0px;" >CÁLCULO DE CAÍDAS DE TENSIÓN</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_anexo_3_sep03R1.pdf" title='CÁLCULO DE CORRIENTES DE CORTOCIRCUITO' style="background-image:none;padding-left:0px;" >CÁLCULO DE CORRIENTES DE CORTOCIRCUITO</a>. Edición: Septiembre 2003; Revisión: 1</li></ul><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/guia_bt_anexo_4_sep03R1.pdf" title='VERIFICACIÓN DE LAS INSTALACIONES ELÉCTRICAS' style="background-image:none;padding-left:0px;" >VERIFICACIÓN DE LAS INSTALACIONES ELÉCTRICAS</a>. Edición: Septiembre 2003; Revisión: 1</li></ul></div></div>  <div class="subir">
+    <a href="#contenido" title="">
+      <span id="ctl00_PlaceHolderMain_MitycLabel2">Subir</span>
+    </a>
+  </div>
+<a name=''></a>
+<DIV><H2 class="Separacion"><span style="font-weight:bold">Notas</span></H2><ul style="list-style-type:none;list-style-image:url('formatos/pdf.gif');padding-left:40px;padding-bottom:4px;padding-top:1px;" ><li><a href="http://www.f2i2.net/documentos/lsi/rbt/guias/REBT_Nota_interpretacion_separacion_galvanica.pdf" title='Nota de Interpretación Técnica de la Equivalencia de la Separación Galvánica de la Conexión de Instalaciones Generadoras en Baja Tensión' style="background-image:none;padding-left:0px;" >Nota de Interpretación Técnica de la Equivalencia de la Separación Galvánica de la Conexión de Instalaciones Generadoras en Baja Tensión</a></li></ul></div>  <div class="subir">
+    <a href="#contenido" title="">
+      <span id="ctl00_PlaceHolderMain_MitycLabel2">Subir</span>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
